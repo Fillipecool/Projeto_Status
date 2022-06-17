@@ -1,0 +1,75 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section
+{
+    display: flex;
+    background-color: rgb(67, 66, 93);
+    width: 100%;
+    height: 120px;
+}
+
+
+
+.overhead{
+    position: absolute;
+    display: inline-block;
+
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    width: 70%;
+    height: 110px;
+    left: 17%;
+    top: 60px;
+    border: 0;
+    background-color: white;
+    box-shadow: none;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 10%), 0 4px 6px -2px rgb(0 0 0 / 5%);
+}
+
+.overmid{   
+    position: absolute;
+    display: inline-block;
+
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    width: 70%;
+    height: 40%;
+    left: 17%;
+    top: 200px;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 10%), 0 4px 6px -2px rgb(0 0 0 / 5%);
+}
+
+
+.overleft{
+    position: absolute;
+    display: inline-block;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    width: 38%;
+    height: 40%;
+    left: 17%;
+    top: 600px;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 10%), 0 4px 6px -2px rgb(0 0 0 / 5%);
+}
+
+
+.overright{
+    position: absolute;
+    display: inline-block;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    width: 30%;
+    height: 40%;
+    right: 13%;
+    top: 600px;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 10%), 0 4px 6px -2px rgb(0 0 0 / 5%)
+}
