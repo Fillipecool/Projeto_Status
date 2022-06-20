@@ -33,8 +33,7 @@ section
 
 .overmid{   
     position: absolute;
-    display: inline-block;
-
+    gap: 10px;
     border-radius: 10px 10px 10px 10px;
     width: 70%;
     height: 40%;
@@ -55,6 +54,10 @@ section
     box-shadow: 0 10px 15px -3px rgb(0 0 0 / 10%), 0 4px 6px -2px rgb(0 0 0 / 5%);
 }
 
+.overhead #checkon {
+    position: relative;
+    left: 20px;
+}
 
 .overright{
     position: absolute;
@@ -71,7 +74,7 @@ section
     display: inline-flex;
     justify-content: start;
     align-items: center;
-    gap: 10px;
+    gap: 40px;
     height: 100%;
     right: 100%;
 }
