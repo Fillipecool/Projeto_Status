@@ -46,7 +46,7 @@ section
 
 .overleft{
     position: absolute;
-    display: inline-block;
+    display: inline-flex;
     border-radius: 10px 10px 10px 10px;
     width: 38%;
     height: 40%;
