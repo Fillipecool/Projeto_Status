@@ -3,7 +3,7 @@
   height: 90%;
 }
 
-.myCharts{
-  width: 55%;
+#mychart {
+  width: 100%;
   height: 400px;
 }

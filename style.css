@@ -17,11 +17,10 @@ section
 
 .overhead{
     position: absolute;
-    display: inline-block;
+    display: inline-flex;
+    align-content: center;
 
     border-radius: 10px 10px 10px 10px;
-    -moz-border-radius: 10px 10px 10px 10px;
-    -webkit-border-radius: 10px 10px 10px 10px;
     width: 70%;
     height: 110px;
     left: 17%;
@@ -37,8 +36,6 @@ section
     display: inline-block;
 
     border-radius: 10px 10px 10px 10px;
-    -moz-border-radius: 10px 10px 10px 10px;
-    -webkit-border-radius: 10px 10px 10px 10px;
     width: 70%;
     height: 40%;
     left: 17%;
@@ -51,8 +48,6 @@ section
     position: absolute;
     display: inline-block;
     border-radius: 10px 10px 10px 10px;
-    -moz-border-radius: 10px 10px 10px 10px;
-    -webkit-border-radius: 10px 10px 10px 10px;
     width: 38%;
     height: 40%;
     left: 17%;
@@ -65,11 +60,19 @@ section
     position: absolute;
     display: inline-block;
     border-radius: 10px 10px 10px 10px;
-    -moz-border-radius: 10px 10px 10px 10px;
-    -webkit-border-radius: 10px 10px 10px 10px;
     width: 30%;
     height: 40%;
     right: 13%;
     top: 600px;
     box-shadow: 0 10px 15px -3px rgb(0 0 0 / 10%), 0 4px 6px -2px rgb(0 0 0 / 5%)
 }
+
+#novadiv {
+    display: inline-flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    height: 100%;
+    right: 100%;
+}
+
