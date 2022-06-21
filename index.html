@@ -49,7 +49,7 @@
           </div>
 
             <div id="chartdiv"></div>
-            
+
         </div>
     </section>
 
@@ -99,19 +99,19 @@ var series = chart.series.push(am5percent.PieSeries.new(root, {
   alignLabels: false
 }));
 
-series.labels.template.setAll({
-  textType: "circular",
-  centerX: 0,
-  centerY: 0
-});
-
+series.get("colors").set("colors", [
+  am5.color(0x095256),
+  am5.color(0x087f8c),
+  am5.color(0x5aaa95),
+  am5.color(0xbb9f06)
+]);
 
 // Set data
 // https://www.amcharts.com/docs/v5/charts/percent-charts/pie-chart/#Setting_data
 series.data.setAll([
   { value: 1, category: "" },
-  { value: 2, category: "" },
-  { value: 1, category: "" },
+  { value: 3, category: "" },
+  { value: 3, category: "" },
   { value: 2, category: "" },
 ]);
 

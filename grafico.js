@@ -55,6 +55,7 @@ var series = chart.series.push(am5xy.LineSeries.new(root, {
   name: "Series 1",
   xAxis: xAxis,
   yAxis: yAxis,
+  stroke: am5.color("#9932CC"),
   valueYField: "value1",
   valueXField: "date",
   tooltip: am5.Tooltip.new(root, {
@@ -63,20 +64,20 @@ var series = chart.series.push(am5xy.LineSeries.new(root, {
 }));
 
 series.strokes.template.setAll({
-  strokeWidth: 2
+  strokeWidth: 2,
+
 });
 
 series.get("tooltip").get("background").set("fillOpacity", 0.5);
-
 var series2 = chart.series.push(am5xy.LineSeries.new(root, {
   name: "Series 2",
   xAxis: xAxis,
   yAxis: yAxis,
+  stroke: am5.color("#7FFFD4"),
   valueYField: "value2",
   valueXField: "date"
 }));
 series2.strokes.template.setAll({
-  strokeDasharray: [2, 2],
   strokeWidth: 2
 });
 
