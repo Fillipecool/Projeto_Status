@@ -112,3 +112,10 @@ section
     width: 95%;
 }
 
+.icon{
+    position: absolute;
+    right: 15px;
+    display: inline-flex;
+    justify-content: start;
+    align-items: center;
+}

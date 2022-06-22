@@ -97,52 +97,42 @@ var data = [{
   date: new Date(2019, 5, 12).getTime(),
   value1: 2,
   value2: 6,
-  previousDate: new Date(2019, 5, 5)
 }, {
   date: new Date(2019, 5, 13).getTime(),
   value1: 5,
   value2: 12,
-  previousDate: "2019-05-06"
 }, {
   date: new Date(2019, 5, 14).getTime(),
   value1: 9,
   value2: 10,
-  previousDate: "2019-05-07"
 }, {
   date: new Date(2019, 5, 15).getTime(),
   value1: 7,
   value2: 25,
-  previousDate: "2019-05-08"
 }, {
   date: new Date(2019, 5, 16).getTime(),
   value1: 19,
   value2: 30,
-  previousDate: "2019-05-09"
 }, {
   date: new Date(2019, 5, 17).getTime(),
   value1: 23,
   value2: 42,
-  previousDate: "2019-05-10"
 }, {
   date: new Date(2019, 5, 18).getTime(),
   value1: 8,
   value2: 38,
-  previousDate: "2019-05-11"
 },{
   date: new Date(2019, 5, 19).getTime(),
   value1: 12,
   value2: 26,
-  previousDate: "2019-05-12"
 },{
   date: new Date(2019, 5, 20).getTime(),
   value1: 7,
   value2: 25,
-  previousDate: "2019-05-13"
 },{
   date: new Date(2019, 5, 21).getTime(),
   value1: 35,
   value2: 45,
-  previousDate: "2019-05-14"
 }]
 
 
