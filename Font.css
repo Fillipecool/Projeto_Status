@@ -35,3 +35,13 @@
 #menos{
     font-size: 17px;
 }
+
+.Lista{
+    color: #646d7b;
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+ul.none{
+    list-style-type: none;
+}

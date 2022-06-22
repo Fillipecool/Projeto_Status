@@ -37,32 +37,42 @@
                 <img src="img/check.png" alt="checkon" height="30px" >
                 </div>
                 <h1 class="titulo">Todo o Serviço Operacional <br> <p id="menos"><u>Último incidente</u> 5 dias atrás</p</h1>
-                
-
-
-            </div>
+              </div>
         </div>
 
+        
         <div class="overmid">
           <div class="servico">
             <h1 id="zap">WhatsApp - Últimas 24 horas</h1>
           </div>
-
             <div id="chartdiv"></div>
-
-        </div>
+          </div>
     </section>
 
 
     <div class="overright">
       <div class="servico">
         <h1 class="titulo">Serviços</h1>
+      
       </div>
+      <div id="list">
+      <ul class="none">    <br>    <br>
+        <li class="Lista">SacDigital</li>
+        <br><hr class="hr"><br>
+        <li class="Lista">Panfleto.Online</li>
+        <br><hr class="hr"><br>
+        <li class="Lista">SMSIdeal</p>
+        <br><hr class="hr"><br>
+        <li class="Lista">Consulta</li>
+        <br><hr class="hr"><br>
+        <li class="Lista">WhatsApp</li>
+      </ul>
+      </div>  
     </div>
 
 
     <div class="overleft">
-      <div class="servico">
+      <div id="centro">
        <h1 class="titulo">Brasil</h1>
       </div>
         <div id="mychart"></div>
@@ -87,7 +97,7 @@ root.setThemes([
 // https://www.amcharts.com/docs/v5/charts/percent-charts/pie-chart/
 var chart = root.container.children.push(am5percent.PieChart.new(root, {
   layout: root.verticalLayout,
-  innerRadius: am5.percent(50)
+  innerRadius: am5.percent(60)
 }));
 
 
@@ -98,24 +108,23 @@ var series = chart.series.push(am5percent.PieSeries.new(root, {
   categoryField: "category",
   alignLabels: false
 }));
+series.labels.template.set("forceHidden", true);
 
 series.get("colors").set("colors", [
-  am5.color(0x095256),
-  am5.color(0x087f8c),
-  am5.color(0x5aaa95),
-  am5.color(0xbb9f06)
+  am5.color("#55d9fe"),
+  am5.color("#ff8374"),
+  am5.color("#ffda83"),
+  am5.color("#a4a0fc")
 ]);
 
 // Set data
 // https://www.amcharts.com/docs/v5/charts/percent-charts/pie-chart/#Setting_data
 series.data.setAll([
-  { value: 1, category: "" },
-  { value: 3, category: "" },
   { value: 3, category: "" },
   { value: 2, category: "" },
+  { value: 2, category: "" },
+  { value: 2, category: "" },
 ]);
-
-legend.data.setAll(series.dataItems);
 
 
 // Play initial series animation

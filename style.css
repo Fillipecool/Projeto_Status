@@ -93,3 +93,22 @@ section
     right: 100%;
 }
 
+#centro {
+    position: absolute;
+    top: 20px;
+    left: 40%;
+    font-size: 15px;
+}
+
+#list{
+    position: absolute;
+    width: 95%;
+    top: 30px;
+    left: 30px;
+}
+
+.hr{
+    position: absolute;
+    width: 95%;
+}
+

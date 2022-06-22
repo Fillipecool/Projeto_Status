@@ -19,7 +19,7 @@ var chart = root.container.children.push(am5xy.XYChart.new(root, {
   panY: true,
   wheelX: "panX",
   wheelY: "zoomX",
-  pinchZoomX:true
+  pinchZoomX: true
 }));
 
 chart.get("colors").set("step", 3);
@@ -29,6 +29,8 @@ chart.get("colors").set("step", 3);
 // https://www.amcharts.com/docs/v5/charts/xy-chart/cursor/
 var cursor = chart.set("cursor", am5xy.XYCursor.new(root, {}));
 cursor.lineY.set("visible", false);
+cursor.lineX.set("visible", false);
+
 
 
 // Create axes
@@ -47,6 +49,7 @@ var yAxis = chart.yAxes.push(am5xy.ValueAxis.new(root, {
   maxDeviation: 0.3,
   renderer: am5xy.AxisRendererY.new(root, {})
 }));
+
 
 
 // Add series
@@ -86,46 +89,62 @@ series2.strokes.template.setAll({
 root.dateFormatter.setAll({
   dateFormat: "yyyy-MM-dd",
   dateFields: ["valueX"]
+  
 });
-
 
 // Set data
 var data = [{
   date: new Date(2019, 5, 12).getTime(),
-  value1: 30,
-  value2: 48,
+  value1: 2,
+  value2: 6,
   previousDate: new Date(2019, 5, 5)
 }, {
   date: new Date(2019, 5, 13).getTime(),
-  value1: 53,
-  value2: 51,
+  value1: 5,
+  value2: 12,
   previousDate: "2019-05-06"
 }, {
   date: new Date(2019, 5, 14).getTime(),
-  value1: 56,
-  value2: 58,
+  value1: 9,
+  value2: 10,
   previousDate: "2019-05-07"
 }, {
   date: new Date(2019, 5, 15).getTime(),
-  value1: 52,
-  value2: 53,
+  value1: 7,
+  value2: 25,
   previousDate: "2019-05-08"
 }, {
   date: new Date(2019, 5, 16).getTime(),
-  value1: 48,
-  value2: 44,
+  value1: 19,
+  value2: 30,
   previousDate: "2019-05-09"
 }, {
   date: new Date(2019, 5, 17).getTime(),
-  value1: 47,
+  value1: 23,
   value2: 42,
   previousDate: "2019-05-10"
 }, {
   date: new Date(2019, 5, 18).getTime(),
-  value1: 59,
-  value2: 55,
+  value1: 8,
+  value2: 38,
   previousDate: "2019-05-11"
+},{
+  date: new Date(2019, 5, 19).getTime(),
+  value1: 12,
+  value2: 26,
+  previousDate: "2019-05-12"
+},{
+  date: new Date(2019, 5, 20).getTime(),
+  value1: 7,
+  value2: 25,
+  previousDate: "2019-05-13"
+},{
+  date: new Date(2019, 5, 21).getTime(),
+  value1: 35,
+  value2: 45,
+  previousDate: "2019-05-14"
 }]
+
 
 series.data.setAll(data);
 series2.data.setAll(data);
