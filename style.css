@@ -103,27 +103,57 @@ section
 #list{
     position: absolute;
     width: 95%;
-    top: 30px;
+    top: 60px;
     left: 30px;
+    font: 1em sans-serif;
+    font-size: 19px;
+    color: #646d7b;
 }
 
-.hr{
-    position: absolute;
-    width: 95%;
+#list .serv{
+    align-items: center;
+    display: inline-flex;
+    height: 48px;
+
 }
 
-.icon{
-    position: absolute;
-    right: 15px;
+#list .bar{
+    width: 92%;
+    height: 2px;
+    background-color: rgb(225, 232, 239);
 }
-.Operando:hover::after{
-    content: attr(data-tooltip);
-    content: "Operando";
+
+.container{
+    line-height: center;
     position: absolute;
-    border-radius: 10px 10px 10px 10px;
-    width: 80px;
+    top: 10px;
+    height: 50px;
+    right: 20px;
+    display: inline-block;
+}
+.content-tooltip{
+    position: relative;
+    cursor: pointer;
+    padding: 2px;
+}
+.tooltip-text{
+    position: absolute;
+    right: -140px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+.content-tooltip:hover .tooltip-text{
+    width: 120px;
     height: 60px;
-    right: -110px;
-    top: 30px;
-    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 10%), 0 4px 6px -2px rgb(0 0 0 / 5%)
+    background-color: #fff;
+    color: #000;
+    font-size: 15px;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 10px;
+    z-index: 1;
+    visibility: visible;
+    opacity: 1;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 10%), 0 4px 6px -2px rgb(0 0 0 / 5%);
 }
