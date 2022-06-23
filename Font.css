@@ -45,3 +45,9 @@
 ul.none{
     list-style-type: none;
 }
+
+.warning{
+    font-family: sans-serif;
+    color: #646d7b;
+    font-size: 10px;
+}
