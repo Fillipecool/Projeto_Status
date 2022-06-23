@@ -32,7 +32,6 @@ section
     position: absolute;
     display: inline-flex;
     align-content: center;
-
     border-radius: 10px 10px 10px 10px;
     width: 70%;
     height: 110px;
@@ -74,9 +73,8 @@ section
 }
 
 .overright{
+    padding: 2%;
     position: absolute;
-    display: inline-flex;
-    align-content: center;
     border-radius: 10px 10px 10px 10px;
     width: 30%;
     height: 40%;
@@ -85,11 +83,6 @@ section
     box-shadow: 0 10px 15px -3px rgb(0 0 0 / 10%), 0 4px 6px -2px rgb(0 0 0 / 5%)
 }
 
-.servico{
-    position: absolute;
-    top: 15px;
-    left: 15px;
-}
 
 #novadiv {
     display: inline-flex;
@@ -107,21 +100,23 @@ section
     font-size: 15px;
 }
 
+
 #list{
+    padding: 1%;
     position: absolute;
-    width: 95%;
-    top: 60px;
-    left: 30px;
-    font: 1em sans-serif;
-    font-size: 19px;
-    color: #646d7b;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 90%;
+    height: 80%;
 }
 
 #list .serv{
-    align-items: center;
-    display: inline-flex;
-    height: 48px;
-
+    display: flex;
+    justify-content: space-between;
+    font-family: sans-serif;
+    font-size: 19px;
+    color: #646d7b;
 }
 
 #list .bar{
@@ -131,6 +126,7 @@ section
 }
 
 .container{
+    display: flex;
     line-height: center;
     position: absolute;
     top: 10px;
